@@ -3,3 +3,14 @@
 ################################################################################
 
 /.vs/Pitstop-VehicleManagement/v15
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Presenter/obj
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Presenter/bin/Debug/netcoreapp2.2
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Persistence/obj
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Persistence/bin/Debug/netcoreapp2.2
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Infastructure/obj
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Infastructure/bin/Debug/netcoreapp2.2
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Domain/obj
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Domain/bin/Debug/netcoreapp2.2
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Application/obj
+/src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Application/bin/Debug/netcoreapp2.2
+/.vs/Pitstop-VehicleManagement/v16

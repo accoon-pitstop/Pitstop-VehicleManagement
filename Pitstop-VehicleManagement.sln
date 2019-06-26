@@ -1,11 +1,75 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1C8812B9-EFE6-4408-B811-11A82B59240A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{06E8073E-6A85-4368-9FB1-43EADE8B9258}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{EA6A94EC-20BF-481C-B18F-BA9AD7021746}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6D65F710-ABA6-4080-B604-B16689E5F9DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accoon.Pitshop.VehicleApi.Application", "src\Pitshop.VehicleApi\Accoon.Pitshop.VehicleApi.Application\Accoon.Pitshop.VehicleApi.Application.csproj", "{51969801-C304-4BF6-BB47-464FB484F4F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenter", "Presenter", "{8187D723-912A-4DAC-A91E-E80758DEE109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accoon.Pitshop.VehicleApi.Presenter", "src\Pitshop.VehicleApi\Accoon.Pitshop.VehicleApi.Presenter\Accoon.Pitshop.VehicleApi.Presenter.csproj", "{F97E8C00-C543-4245-A7EE-706F33E1B2F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{565D5733-FC66-4635-B085-73D8F78599FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accoon.Pitshop.VehicleApi.Domain", "src\Pitshop.VehicleApi\Accoon.Pitshop.VehicleApi.Domain\Accoon.Pitshop.VehicleApi.Domain.csproj", "{9867D1B9-3FC0-44AA-9083-FE068D4E7CE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infastructure", "Infastructure", "{8268AE8B-6523-428C-8CCC-7C3745A1531C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accoon.Pitshop.VehicleApi.Infastructure", "src\Pitshop.VehicleApi\Accoon.Pitshop.VehicleApi.Infastructure\Accoon.Pitshop.VehicleApi.Infastructure.csproj", "{28A973D9-101A-4D71-BC45-972129AB1BD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{660CC091-334A-484F-AF04-1066D56F4897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accoon.Pitshop.VehicleApi.Persistence", "src\Pitshop.VehicleApi\Accoon.Pitshop.VehicleApi.Persistence\Accoon.Pitshop.VehicleApi.Persistence.csproj", "{445C1150-EFEE-49D6-903A-441A1B01CBA1}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51969801-C304-4BF6-BB47-464FB484F4F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51969801-C304-4BF6-BB47-464FB484F4F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51969801-C304-4BF6-BB47-464FB484F4F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51969801-C304-4BF6-BB47-464FB484F4F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97E8C00-C543-4245-A7EE-706F33E1B2F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97E8C00-C543-4245-A7EE-706F33E1B2F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97E8C00-C543-4245-A7EE-706F33E1B2F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97E8C00-C543-4245-A7EE-706F33E1B2F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9867D1B9-3FC0-44AA-9083-FE068D4E7CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9867D1B9-3FC0-44AA-9083-FE068D4E7CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9867D1B9-3FC0-44AA-9083-FE068D4E7CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9867D1B9-3FC0-44AA-9083-FE068D4E7CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A973D9-101A-4D71-BC45-972129AB1BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A973D9-101A-4D71-BC45-972129AB1BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A973D9-101A-4D71-BC45-972129AB1BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A973D9-101A-4D71-BC45-972129AB1BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{445C1150-EFEE-49D6-903A-441A1B01CBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{445C1150-EFEE-49D6-903A-441A1B01CBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{445C1150-EFEE-49D6-903A-441A1B01CBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{445C1150-EFEE-49D6-903A-441A1B01CBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D65F710-ABA6-4080-B604-B16689E5F9DA} = {1C8812B9-EFE6-4408-B811-11A82B59240A}
+		{51969801-C304-4BF6-BB47-464FB484F4F7} = {6D65F710-ABA6-4080-B604-B16689E5F9DA}
+		{8187D723-912A-4DAC-A91E-E80758DEE109} = {1C8812B9-EFE6-4408-B811-11A82B59240A}
+		{F97E8C00-C543-4245-A7EE-706F33E1B2F1} = {8187D723-912A-4DAC-A91E-E80758DEE109}
+		{565D5733-FC66-4635-B085-73D8F78599FA} = {1C8812B9-EFE6-4408-B811-11A82B59240A}
+		{9867D1B9-3FC0-44AA-9083-FE068D4E7CE8} = {565D5733-FC66-4635-B085-73D8F78599FA}
+		{8268AE8B-6523-428C-8CCC-7C3745A1531C} = {1C8812B9-EFE6-4408-B811-11A82B59240A}
+		{28A973D9-101A-4D71-BC45-972129AB1BD2} = {8268AE8B-6523-428C-8CCC-7C3745A1531C}
+		{660CC091-334A-484F-AF04-1066D56F4897} = {1C8812B9-EFE6-4408-B811-11A82B59240A}
+		{445C1150-EFEE-49D6-903A-441A1B01CBA1} = {660CC091-334A-484F-AF04-1066D56F4897}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E23C0DE-8247-44EE-95A5-86D3F39965BE}
