@@ -59,10 +59,10 @@ namespace Accoon.Pitshop.VehicleApi.Presenter
             services.AddAutoMapper(new Assembly[] { typeof(AutoMapperProfile).GetTypeInfo().Assembly });
 
             // register db context and migration assebly
-            var connectionString = Configuration.GetConnectionString("Context").ToString();
-            services.AddDbContext<DefaultDatabaseContext>
+            var connectionString = Configuration.GetConnectionString("VehicleContext").ToString();
+            services.AddDbContext<VehicleDatabaseContext>
                 (options => options.UseSqlServer(connectionString, x => x.MigrationsAssembly("Accoon.Pitstop.VehicleApi.Persistence")));
-            services.AddTransient<IDatabaseContext, DefaultDatabaseContext>();
+            services.AddTransient<IDatabaseContext, VehicleDatabaseContext>();
 
             // register mediatr and command handlers
             services.AddMediatR(typeof(CreateCustomerHandler).GetTypeInfo().Assembly);

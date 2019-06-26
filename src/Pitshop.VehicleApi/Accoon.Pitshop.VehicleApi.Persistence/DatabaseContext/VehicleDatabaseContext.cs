@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Accoon.Pitshop.VehicleApi.Persistence.DatabaseContext
 {
-    public class DefaultDatabaseContext : DbContext, IDatabaseContext
+    public class VehicleDatabaseContext : DbContext, IDatabaseContext
     {
         // constructor
-        public DefaultDatabaseContext(DbContextOptions<DefaultDatabaseContext> options) : base(options)
+        public VehicleDatabaseContext(DbContextOptions<VehicleDatabaseContext> options) : base(options)
         {
 
         }
@@ -18,7 +18,7 @@ namespace Accoon.Pitshop.VehicleApi.Persistence.DatabaseContext
         // register entity configurations
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(DefaultDatabaseContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(VehicleDatabaseContext).Assembly);
         }
 
 
