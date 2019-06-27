@@ -1,5 +1,4 @@
 #!/bin/bash
-ls
 DOCKER_TAG='latest'
 docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 docker build -t accoon.pitstop.vehiclemanagement:$DOCKER_TAG src/Pitshop.VehicleApi/Accoon.Pitshop.VehicleApi.Presenter
