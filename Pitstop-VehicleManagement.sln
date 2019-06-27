@@ -8,6 +8,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{06E8073E-6A85-4368-9FB1-43EADE8B9258}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{EA6A94EC-20BF-481C-B18F-BA9AD7021746}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		scripts\docker-build-local.sh = scripts\docker-build-local.sh
+		scripts\docker-publish.sh = scripts\docker-publish.sh
+		scripts\dotnet-build-local.sh = scripts\dotnet-build-local.sh
+		scripts\dotnet-build.sh = scripts\dotnet-build.sh
+		scripts\dotnet-publish.sh = scripts\dotnet-publish.sh
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{6D65F710-ABA6-4080-B604-B16689E5F9DA}"
 EndProject
