@@ -12,12 +12,12 @@ namespace Accoon.Pitshop.VehicleApi.Application.UserCases.Vehicle.CreateVehicle
     public class CreateVehicleHandler : IRequestHandler<CreateVehicleCommand, VehicleCreated>
     {
         private readonly IMediator mediator;
-        private readonly IDatabaseContext cqrscaDbContext;
+        private readonly IDatabaseContext database;
 
         public CreateVehicleHandler(IMediator mediator, IDatabaseContext context)
         {
             this.mediator = mediator;
-            this.cqrscaDbContext = context;
+            this.database = context;
         }
 
         public async Task<VehicleCreated> Handle(CreateVehicleCommand request, CancellationToken cancellationToken)
@@ -26,12 +26,13 @@ namespace Accoon.Pitshop.VehicleApi.Application.UserCases.Vehicle.CreateVehicle
             {
                 Id = Guid.NewGuid(),
                 Brand = request.Brand,
-
+                LicenseNumber = request.LicenseNumber,
+                Type = request.Type
             };
             //insert customer to database
-            this.cqrscaDbContext.Vehicles.Add(entity);
+            this.database.Vehicles.Add(entity);
 
-            await this.cqrscaDbContext.SaveChangesAsync(cancellationToken);
+            await this.database.SaveChangesAsync(cancellationToken);
 
             var newcustomer = new VehicleCreated { VehicleId = entity.Id };
             await this.mediator.Publish(newcustomer, cancellationToken);
