@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Accoon.Pitshop.VehicleApi.Persistence.Infastructure
 {
-    class DummyInfastructure
+    public interface IEnvironmentService
     {
+        string EnvironmentName { get; set; }
     }
 }

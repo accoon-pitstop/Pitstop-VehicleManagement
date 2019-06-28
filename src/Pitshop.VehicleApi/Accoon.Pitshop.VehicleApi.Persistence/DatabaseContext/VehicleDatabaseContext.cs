@@ -27,5 +27,5 @@ namespace Accoon.Pitshop.VehicleApi.Persistence.DatabaseContext
 }
 
 // Add migrations
-// Add-Migration InitMigration -Project Accoon.Pitshop.VehicleApi.Persistence -StartupProject Accoon.Api -Context DefaultDatabaseContext
-// update-database -Project Accoon.Pitshop.VehicleApi.Persistence -StartupProject Accoon.Api
+// Add-Migration InitMigration -Project Accoon.Pitshop.VehicleApi.Persistence -StartupProject Accoon.Pitshop.VehicleApi.Presenter -Context VehicleDatabaseContext
+// update-database -Project Accoon.Pitshop.VehicleApi.Persistence -StartupProject Accoon.Pitshop.VehicleApi.Presenter
