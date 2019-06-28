@@ -13,7 +13,7 @@ namespace Accoon.Pitshop.VehicleApi.Persistence.DatabaseContext
         }
 
         // database entities
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
 
         // register entity configurations
         protected override void OnModelCreating(ModelBuilder modelBuilder)

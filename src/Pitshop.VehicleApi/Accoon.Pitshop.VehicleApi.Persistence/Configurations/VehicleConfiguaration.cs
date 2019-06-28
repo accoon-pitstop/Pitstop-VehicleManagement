@@ -7,13 +7,14 @@ using System.Text;
 
 namespace Accoon.Pitshop.VehicleApi.Persistence.Configurations
 {
-    public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
+    public class VehicleConfiguaration: IEntityTypeConfiguration<Vehicle>
     {
-        public void Configure(EntityTypeBuilder<Customer> builder)
+        public void Configure(EntityTypeBuilder<Vehicle> builder)
         {
             builder.HasKey(e => e.Id);
-            builder.Property(e => e.Name).HasMaxLength(100).IsRequired();
-            builder.Property(e => e.Age).IsRequired();
+            builder.HasKey(e => e.LicenseNumber);
+            builder.HasKey(e => e.Brand);
+            builder.HasKey(e => e.Type);
         }
     }
 }

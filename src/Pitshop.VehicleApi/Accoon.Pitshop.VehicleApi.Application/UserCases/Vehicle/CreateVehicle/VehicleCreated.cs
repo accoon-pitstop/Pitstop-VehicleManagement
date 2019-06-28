@@ -7,6 +7,6 @@ namespace Accoon.Pitshop.VehicleApi.Application.UserCases.Vehicle.CreateVehicle
 {
     public class VehicleCreated : INotification
     {
-        public Guid CustomerId { get; set; }
+        public Guid VehicleId { get; set; }
     }
 }

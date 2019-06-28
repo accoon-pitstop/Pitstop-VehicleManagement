@@ -14,7 +14,7 @@ namespace Accoon.Pitshop.VehicleApi.Application.Interfaces.Database
     public interface IDatabaseContext
     {
         // define dbsets in database
-        DbSet<Customer> Customers { get; set; }
+        DbSet<Vehicle> Vehicles { get; set; }
 
         // save database changes  
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);

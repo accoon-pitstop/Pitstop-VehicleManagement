@@ -16,9 +16,4 @@
     <ProjectReference Include="..\Accoon.Pitshop.VehicleApi.Domain\Accoon.Pitshop.VehicleApi.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UserCases\Vehicle\GetVehicle\" />
-    <Folder Include="UserCases\Vehicle\GetVehicleList\" />
-  </ItemGroup>
-
 </Project>

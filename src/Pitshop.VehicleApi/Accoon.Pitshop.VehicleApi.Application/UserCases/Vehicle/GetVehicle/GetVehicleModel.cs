@@ -6,10 +6,12 @@ using System.Text;
 
 namespace Accoon.Pitshop.VehicleApi.Application.UserCases.Customer.GetCustomer
 {
-    public class CustomerModel : IMapFrom<Accoon.Pitshop.VehicleApi.Domain.Entities.Customer>
+    public class GetVehicleModel : IMapFrom<Accoon.Pitshop.VehicleApi.Domain.Entities.Vehicle>
     {
         public Guid Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
+        public string LicenseNumber { get; set; }
+        public string Brand { get; set; }
+        public string Type { get; set; }
+        public string OwnerId { get; set; }
     }
 }

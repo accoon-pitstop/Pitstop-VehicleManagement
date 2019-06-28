@@ -2,7 +2,6 @@
 using Accoon.Pitshop.VehicleApi.Presenter.Middlewares;
 using Accoon.Pitshop.VehicleApi.Application.Infastructure.Automapper;
 using Accoon.Pitshop.VehicleApi.Application.Interfaces.Database;
-using Accoon.Pitshop.VehicleApi.Application.UserCases.Customer.CreateCustomer;
 using Accoon.Pitshop.VehicleApi.Persistence.DatabaseContext;
 using AutoMapper;
 using FluentValidation.AspNetCore;
@@ -19,6 +18,7 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Reflection;
+using Accoon.Pitshop.VehicleApi.Application.UserCases.Vehicle.CreateVehicle;
 
 namespace Accoon.Pitshop.VehicleApi.Presenter
 {
@@ -40,7 +40,7 @@ namespace Accoon.Pitshop.VehicleApi.Presenter
                 .AddFluentValidation(
                 fv =>
                 {
-                    fv.RegisterValidatorsFromAssemblyContaining<CreateCustomerCommandValidator>();
+                    fv.RegisterValidatorsFromAssemblyContaining<CreateVehicleCommandValidator>();
                     fv.ImplicitlyValidateChildProperties = true;
                 })
                 // handle 404 error
@@ -65,7 +65,7 @@ namespace Accoon.Pitshop.VehicleApi.Presenter
             services.AddTransient<IDatabaseContext, VehicleDatabaseContext>();
 
             // register mediatr and command handlers
-            services.AddMediatR(typeof(CreateCustomerHandler).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(CreateVehicleHandler).GetTypeInfo().Assembly);
 
             // Swagger
             services.AddSwaggerGen(c =>

@@ -9,10 +9,9 @@ namespace Accoon.Pitshop.VehicleApi.Application.UserCases.Vehicle.CreateVehicle
     {
         public CreateVehicleCommandValidator()
         {
-            RuleFor(x => x.Name).NotNull().WithMessage("Name is required");
-            RuleFor(x => x.Age)
-                .NotNull().WithMessage("Age is required")
-                .GreaterThan(18).WithMessage("Age must greater then 18");
+            RuleFor(x => x.Brand).NotEmpty().WithMessage("Name is required");
+            RuleFor(x => x.LicenseNumber).NotEmpty().WithMessage("Name is LicenseNumber"); 
+            RuleFor(x => x.Type).NotEmpty().WithMessage("Name is Type"); 
         }
     }
 }

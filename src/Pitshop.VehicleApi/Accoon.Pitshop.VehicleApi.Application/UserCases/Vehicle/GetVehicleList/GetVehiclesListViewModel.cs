@@ -2,8 +2,8 @@
 
 namespace Accoon.Pitshop.VehicleApi.Application.UserCases.Customer.GetCustomerList
 {
-    public class CustomerListViewModel
+    public class GetVehiclesListViewModel
     {
-        public List<CustomerDetailModel> Customers { get; set; }
+        public List<GetVehicleListModel> Vehicles { get; set; }
     }
 }

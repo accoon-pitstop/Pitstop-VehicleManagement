@@ -22,18 +22,18 @@ namespace Accoon.Pitshop.VehicleApi.Application.UserCases.Vehicle.CreateVehicle
 
         public async Task<VehicleCreated> Handle(CreateVehicleCommand request, CancellationToken cancellationToken)
         {
-            var entity = new Accoon.Pitshop.VehicleApi.Domain.Entities.Customer()
+            var entity = new Accoon.Pitshop.VehicleApi.Domain.Entities.Vehicle()
             {
                 Id = Guid.NewGuid(),
-                Name = request.Name,
-                Age = request.Age
+                Brand = request.Brand,
+
             };
             //insert customer to database
-            this.cqrscaDbContext.Customers.Add(entity);
+            this.cqrscaDbContext.Vehicles.Add(entity);
 
             await this.cqrscaDbContext.SaveChangesAsync(cancellationToken);
 
-            var newcustomer = new VehicleCreated { CustomerId = entity.Id };
+            var newcustomer = new VehicleCreated { VehicleId = entity.Id };
             await this.mediator.Publish(newcustomer, cancellationToken);
 
             return newcustomer;
